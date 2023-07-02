@@ -6,5 +6,13 @@ This is the first circuit/ code combo I've designed and built on my own.  I have
 
 I set out to build a circuit that upon pressing one button it will count 0 - 9 on the LED.  When the user presses another button a random number will apear.
 
-<img src="media/buttonLED.gif" alt="demoGIF">
+<img src="media/buttonLED.gif" alt="Demo GIF">
+
+*the finished prototype in action*
+
+<br>
+
+## Wiring Diagram
+
+<img src="media/diagram.png"  alt="Wiring Diagram">
 
