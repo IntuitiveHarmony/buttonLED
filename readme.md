@@ -15,11 +15,11 @@ I set out to build a circuit that upon pressing one button it will count 0 - 9 o
 
 ## Background
 
-I have a decent amount of experience with 24v control circuits from my days as an HVAC tech.  The control wiring was always one of the most interesting aspects of the job to me.  There is something about setting up the logic of the circuitry that captured my imagination.  I particularlty enjoyed wiring all the pumps, limit switches, zone valves, end switches, gas valves, and thermostats that ran the boilers I used to service and install.  On full installs, where we would replace all the exsisting old components with new ones, I would love to just sit there on my stool with the spools of wire, a pair of wire strippers and all the wiring diagrams for the system. I would let my mind drift into the world of switches, pathways and loads that I would layout for the electricity to flow in order for me to automate the heating or cooling of my customers' home or building. 
+I have a decent amount of experience with 24v control circuits from my days as an HVAC tech.  The control wiring was always one of the most interesting aspects of the job to me.  There is something about setting up the logic of the circuitry that captured my imagination.  I particularlty enjoyed wiring all the pumps, limit switches, zone valves, end switches, gas valves, and thermostats that ran the boilers I used to service and install.  On full installs, where we would replace all the exsisting old components with new ones, I would love to just sit there on my stool with the spools of wire, a pair of wire strippers and all the wiring diagrams for the system. Whenever I set up the control wiring of a system I would let my mind drift into the world of switches, pathways and loads that I would layout for the electricity to flow in order for me to automate the heating or cooling of my customers' home or building. 
 
 <img src="media/boiler.jpeg" style="width: 35%; max-width: 25em" alt="Boiler">
 
-*boiler that I and a colleague built for a customer*
+*boiler that a colleague and I built for a customer*
 
 <hr>
 
@@ -34,10 +34,16 @@ On jobs that had more of a complicated setup we would typically use a [Taco Zone
 
 <br>
 
+That was a fun trip down memory lane, back to the circuit at hand
+
+<br>
+<br>
 
 ## Wiring Diagram
 
-<img src="media/diagram.png"  alt="Wiring Diagram">
+For the circuit itself I designed it in a stream of conciousness sort of way.  I started out with a bit of research into how the 7 segment LED works and how LEDs work in general.  I first started with the increment button, wired the 7 segment LED and then added the random button later.  Before I wrote any code I made sure I knew that my wiring was correct by applying 5v directly to each of the LED circuits within the 7 segment LED.  Once that was sorted I moved on to the code itself. I chose to wire the decimal point to the 13th pin in order to tap into the arduino's built in LED as well.  
+
+<img src="media/diagram.png"  style="width: 55%; max-width: 40em" alt="Wiring Diagram">
 
 <br>
 <br>
