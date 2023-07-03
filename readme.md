@@ -25,7 +25,7 @@ I have a decent amount of experience with 24v control circuits from my days as a
 
 <br>
 
-On jobs that had more of a complicated setup we would typically use a [Taco Zone Valve Controller](https://www.tacocomfort.com/product/zone-valve-controls/) to help simplify the circuits we would need to build.  While setting up the thermostats and pumps I used to think about the logic inside of these controllers.  Now, as I mess with the arduino I am starting to understand how the logic actually may have worked.
+On jobs that had more of a complicated setup we would typically use a [Taco Zone Valve Controller](https://www.tacocomfort.com/product/zone-valve-controls/) to help simplify the circuits we would need to build.  While setting up each of the zones I used to think about the logic inside of these controllers.  Now, as I mess with the arduino I am starting to understand how the logic actually may have worked.
 
 <img src="media/tacoContoller.png" style="width: 55%; max-width: 40em" alt="Taco Schematic">
 
