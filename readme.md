@@ -58,7 +58,7 @@ For the 7 segment LED circuit, I designed it in a stream of consciousness sort o
 
 ## Code
 
-For the 7 segment LED I declared a variable for each of the pins that would be connected to each corresponding LED segment.  I had fun building the logic behind lighting each of the segments of the LED.  Here is the code:
+For the 7 segment LED I declared a variable for each of the pins that would be connected to each corresponding LED segment.  I had fun building the logic behind lighting each of the segments of the LED based on the current number.  Here is the code:
 
 ```c++
 void writeNumber() {
@@ -75,7 +75,7 @@ void writeNumber() {
 
 <br>
 
-As the `number` variable changes, different segments of the component are given power.  I manually "drew" each of the segments based on how each number looks in relation to the map below.  It took a few trial and error rounds and the end results were so satisfying!  To be able to see the LEDs light up and correctly display the number.
+As the `number` variable changes, different segments of the component are given power.  I manually "drew" each of the segments based on how each number looks in relation to the map below.  It took a few trial and error rounds and the end results were so satisfying!  To be able to see the LEDs light up and correctly display the number each time I pressed the increment button made my heart sing. 
 
 <img src="https://www.watelectronics.com/wp-content/uploads/7-Segment-Display-Pinout.jpg" alt="7 Segment LED">
 
