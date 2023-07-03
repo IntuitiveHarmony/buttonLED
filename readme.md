@@ -48,7 +48,31 @@ For the circuit itself I designed it in a stream of conciousness sort of way.  I
 <br>
 <br>
 
-## Schematic
+### Schematic
 
-<img src="media/schematic.png" alt="Circuit Schematic">
+<img src="media/schematic.png" style="width: 55%; max-width: 40em" alt="Circuit Schematic">
 
+<hr>
+<br>
+<br>
+
+## Code
+
+For the 7 segment LED I declared a variable for each of the pins that would be connected to each corresponding LED segment.  I had fun building the logic behind lighting each of the segments of the LED.  Here is the code:
+
+```c++
+void writeNumber() {
+  // Display the corresponding number on the 7-segment display
+  digitalWrite(segA, number == 0 || number == 2 || number == 3 || number == 5 || number == 6 || number == 7 || number == 8 || number == 9);
+  digitalWrite(segB, number == 0 || number == 1 || number == 2 || number == 3 || number == 4 || number == 7 || number == 8 || number == 9);
+  digitalWrite(segC, number == 0 || number == 1 || number == 3 || number == 4 || number == 5 || number == 6 || number == 7 || number == 8 || number == 9);
+  digitalWrite(segD, number == 0 || number == 2 || number == 3 || number == 5 || number == 6 || number == 8 || number == 9);
+  digitalWrite(segE, number == 0 || number == 2 || number == 6 || number == 8);
+  digitalWrite(segF, number == 0 || number == 4 || number == 5 || number == 6 || number == 8 || number == 9);
+  digitalWrite(segG, number == 2 || number == 3 || number == 4 || number == 5 || number == 6 || number == 8 || number == 9);
+}
+```
+
+As the `number` variable changes, different segments of the component are given power.  I manually "drew" each of the segments based on how each number looks in relation to the map below.  It took a few trial and error rounds and the end results were so satisfying!  To be able to see the LEDs light up and correctly display the number.
+
+<img src="https://www.jameco.com/Jameco/workshop/TechTip/working-with-seven-segment-displays-fig1.jpg" alt="7 Segment LED">
