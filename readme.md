@@ -77,7 +77,7 @@ void writeNumber() {
 
 As the `number` variable changes, different segments of the component are given power.  I manually "drew" each of the segments based on how each number looks in relation to the map below.  It took a few trial and error rounds and the end results were so satisfying!  To be able to see the LEDs light up and correctly display the number.
 
-<img src="https://www.jameco.com/Jameco/workshop/TechTip/working-with-seven-segment-displays-fig1.jpg" alt="7 Segment LED">
+<img src="https://www.watelectronics.com/wp-content/uploads/7-Segment-Display-Pinout.jpg" alt="7 Segment LED">
 
 <br>
 
