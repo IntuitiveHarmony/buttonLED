@@ -30,9 +30,9 @@ void writeNumber() {
 
 void setup() {
   pinMode(buttonPin, INPUT);            // Set the increment pin as an input
-  digitalWrite(buttonPin, HIGH);        // Enable the internal pull-up resistor for the pin
+  digitalWrite(buttonPin, true);        // Enable the internal pull-up resistor for the pin
   pinMode(randomButtonPin, INPUT);      // Set the random pin as an input
-  digitalWrite(randomButtonPin, HIGH);  // Enable the internal pull-up resistor for the pin
+  digitalWrite(randomButtonPin, true);  // Enable the internal pull-up resistor for the pin
   Serial.begin(9600);                   // Initialize serial communication (optional)
   pinMode(segA, OUTPUT);
   pinMode(segB, OUTPUT);
@@ -60,7 +60,7 @@ void loop() {
     }
     Serial.print("Number: ");           // Print the number
     Serial.println(number);
-    digitalWrite(segDP, HIGH);          // Turn on the LED
+    digitalWrite(segDP, true);          // Turn on the LED
     delay(200);                         // Debounce delay to avoid multiple increments on a single button press
   }
 
@@ -68,11 +68,11 @@ void loop() {
   if (randomButtonState < 500 && lastRandomButtonState >= 500) {
     // Flash a bunch of random numbers and the DP first
     for (int i = 0; i < 7; i++) {
-      digitalWrite(segDP, HIGH);        // Turn on the LED
+      digitalWrite(segDP, true);        // Turn on the LED
       delay(50);
       number = random(0, 9);
       writeNumber();
-      digitalWrite(segDP, LOW);         // Turn off the LED
+      digitalWrite(segDP, false);       // Turn off the LED
       delay(50);
       number = random(0, 9);
       writeNumber();
@@ -88,7 +88,7 @@ void loop() {
 
   // Turn off the LED if the button is not pressed
   if (buttonState >= 500) {
-    digitalWrite(segDP, LOW);
+    digitalWrite(segDP, false);
   }
 
   writeNumber();
